@@ -1,0 +1,18 @@
+#########
+# Tools #
+#########
+Microsoft.PowerToys
+
+
+########
+# Apps #
+########
+Discord.Discord
+
+# Browsers
+Google.Chrome
+LibreWolf.LibreWolf
+
+# Games
+Valve.Steam
+PrismLauncher.PrismLauncher # Minecraft Launcher
