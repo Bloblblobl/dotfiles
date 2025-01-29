@@ -14,7 +14,7 @@ Write-Host "Setting up Windows environment..." -ForegroundColor Yellow
 Write-Host "1. Installing Windows packages..." -ForegroundColor Yellow
 
 # Read the package names, ignoring comments and empty lines
-$packagesFile = ".\win_packages.txt"
+$packagesFile = ".\win_setup\winget_packages.txt"
 $packageNames = Get-Content $packagesFile | Where-Object { 
     $_.Trim() -ne '' -and $_.Trim() -notmatch '^\s*#' 
 }
