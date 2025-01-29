@@ -30,8 +30,10 @@ chmod +x bootstrap.sh
 The bootstrap script will update/install `git` and `python3`, clone the repo
 (you will be prompted for a
 [PAT](https://github.com/settings/personal-access-tokens)), and execute the
-`bootstrap.py` script (TODO). 
+`bootstrap.py` script. This script will symlink the `symlink_fs/` directory
+maintaining relative paths, using `$HOME` as the root directory. After that,
+it will execute each script in `scripts/` one by one.
 
 -
 
-(TODO): Set up zsh, oh-my-zsh, starship.rs
+(TODO): Scripts to setup zsh, oh-my-zsh, starship.rs
