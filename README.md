@@ -5,7 +5,7 @@ not yet supported.
 
 ## Layout
 
-- `ubuntu_setup/symlink_fs/` mirrors paths under `$HOME` (Bash, Git,
+- `ubuntu_setup/symlink_fs/` mirrors paths under `$HOME` (Bash, Git, tmux,
   Starship, and the Pi maintenance skill).
 - `ubuntu_setup/bootstrap.sh` and `bootstrap.py` install Ubuntu/WSL prerequisites
   and link the configuration.
@@ -74,6 +74,14 @@ The script configures the Windows long-path policy, installs the listed winget
 packages, and requests WSL 2. If it changes the long-path policy, reboot
 manually and rerun it. After WSL setup, open Ubuntu and run the Ubuntu bootstrap.
 Winget must already be available. Native Windows runtime validation is pending.
+
+## tmux
+
+The Slate theme uses built-in tmux features, requires tmux 3.4+ and a Nerd
+Font, and was tested with Windows Terminal/WSL. Copy-mode bindings use WSL's
+`clip.exe` and may mishandle non-ASCII text. OSC 52 also permits applications
+inside panes to write to the system clipboard. Reload with
+`tmux source-file ~/.tmux.conf` or `Ctrl-a`, then `r`.
 
 ## Maintenance and verification
 

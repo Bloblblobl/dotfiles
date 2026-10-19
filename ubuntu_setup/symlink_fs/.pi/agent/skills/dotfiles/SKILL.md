@@ -38,7 +38,7 @@ lives in `win_setup/`. Work in the repository, not through the installed links.
 ```sh
 git status --short
 # Stage only the intended files, for example:
-git add -- README.md ubuntu_setup/symlink_fs/.bashrc
+git add -- README.md ubuntu_setup/symlink_fs/.tmux.conf
 git diff --cached --check
 git diff --cached --name-only
 git -c core.pager=cat diff --cached
