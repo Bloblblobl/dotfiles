@@ -1,3 +1,3 @@
-[user]
-        email = saarsayfan@gmail.com
-        name = Saar Sayfan
+# Portable settings belong here; identity and credentials stay machine-local.
+[include]
+    path = ~/.gitconfig.local

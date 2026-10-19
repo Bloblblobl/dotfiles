@@ -19,9 +19,6 @@ lives in `win_setup/`. Work in the repository, not through the installed links.
   unrelated work.
 - Do not claim platform support or validation that has not been tested.
 
-The existing bootstrap overwrites home files. Inspect it and reconcile local
-configuration before running it.
-
 ## Workflow
 
 1. Read the relevant configuration and its existing documentation before editing.
@@ -30,8 +27,9 @@ configuration before running it.
 3. Update `README.md` only when setup, usage, or discoverability changes. Add a
    `DECISIONS.md` entry only for a durable, non-obvious tradeoff. Keep deferred
    work separate from setup instructions.
-4. Run relevant checks, including `bash -n ubuntu_setup/bootstrap.sh` for shell
-   changes. Disclose untested platforms or flows.
+4. Run relevant checks. For bootstrap changes, start with
+   `python3 -m unittest discover -s tests -v` and
+   `bash -n ubuntu_setup/bootstrap.sh`. Disclose untested platforms or flows.
 5. Stage explicit paths, inspect the entire staged diff, review for secrets,
    then commit with an imperative summary that describes the outcome.
 
