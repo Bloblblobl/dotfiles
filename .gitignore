@@ -1,0 +1,23 @@
+# Secrets and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+.secrets/
+secrets/
+.env
+.env.*
+
+# Local backups
+*.bak
+
+# OS/editor state
+.DS_Store
+*.swp
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Machine-local Git configuration
+.gitconfig.local
