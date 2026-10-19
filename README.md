@@ -62,7 +62,18 @@ file when GitHub setup is selected.
 
 ## Windows
 
-Run `win_setup/setup.ps1` from the repository root in PowerShell.
+From a PowerShell session in the repository:
+
+```powershell
+.\win_setup\setup.ps1 -dryRun
+# Run PowerShell as administrator for the actual setup:
+.\win_setup\setup.ps1
+```
+
+The script configures the Windows long-path policy, installs the listed winget
+packages, and requests WSL 2. If it changes the long-path policy, reboot
+manually and rerun it. After WSL setup, open Ubuntu and run the Ubuntu bootstrap.
+Winget must already be available. Native Windows runtime validation is pending.
 
 ## Maintenance and verification
 

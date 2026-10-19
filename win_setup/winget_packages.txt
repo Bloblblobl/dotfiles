@@ -2,6 +2,9 @@
 # Tools #
 #########
 Microsoft.PowerToys
+LGUG2Z.komorebi # Tiling Window Manager | https://github.com/LGUG2Z/komorebi
+LGUG2Z.whkd # Hotkey Daemon | https://github.com/LGUG2Z/whkd
+AmN.yasb # Status Bar | https://github.com/amnweb/yasb
 
 ########
 # Apps #

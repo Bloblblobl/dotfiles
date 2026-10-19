@@ -3,6 +3,12 @@
 Record durable, non-obvious tradeoffs here; routine changes belong in commits.
 Newest first.
 
+## Make Windows setup explicit
+
+A dry run must not change the machine. Configure the long-path registry policy
+without a synthetic filesystem test or automatic reboot. Stop on native-command
+failures; native Windows validation remains outstanding.
+
 ## Keep Git settings machine-local
 
 Track an include of `~/.gitconfig.local`, not personal identity or credential
