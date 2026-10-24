@@ -87,6 +87,7 @@ inside panes to write to the system clipboard. Reload with
 
 See the [Pi maintenance skill](ubuntu_setup/symlink_fs/.pi/agent/skills/dotfiles/SKILL.md)
 for the change workflow and [decisions](DECISIONS.md) for lasting tradeoffs.
+Outstanding work is in [TODOs](TODOS.md).
 
 ```sh
 python3 -m unittest discover -s tests -v

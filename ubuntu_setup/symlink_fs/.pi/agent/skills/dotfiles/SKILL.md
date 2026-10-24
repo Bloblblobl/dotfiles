@@ -25,8 +25,8 @@ lives in `win_setup/`. Work in the repository, not through the installed links.
 2. Make the smallest coherent change. Explain non-obvious settings in nearby
    comments; avoid narrating obvious code.
 3. Update `README.md` only when setup, usage, or discoverability changes. Add a
-   `DECISIONS.md` entry only for a durable, non-obvious tradeoff. Keep deferred
-   work separate from setup instructions.
+   `DECISIONS.md` entry only for a durable, non-obvious tradeoff. Record deferred
+   work in `TODOS.md` rather than in speculative README prose.
 4. Run relevant checks. For bootstrap changes, start with
    `python3 -m unittest discover -s tests -v` and
    `bash -n ubuntu_setup/bootstrap.sh`. Disclose untested platforms or flows.
